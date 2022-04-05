@@ -21,11 +21,11 @@
     Win % <input type="number" bind:value={nWonPercent}>
     <br><br>
     <div id="results">
-      Total games played: <span style="color:#d0b036">{nPlayed}</span>
+      Total games played: <span style="color:#d0b036">{nPlayed + Math.round(gamesLost)}</span>
       {#if total} 
         <br>
         Wordle average: <span style="color:#538d4e">{total}</span>
       {/if}
-    </div>
+    </div> 
   </div>
 </main>
