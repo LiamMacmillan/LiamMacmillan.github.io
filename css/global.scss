@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "nyt-franklin-700";
+  src: url("/fonts/franklin-normal-700.woff2") format("woff2"), url("/fonts/franklin-normal-700.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+html,
+body {
+  background-color: #121213;
+  color: white;
+  font-family: "nyt-franklin-700";
+}
+
+main {
+  display: flex;
+  justify-content: center;
+
+  h1 {
+    text-transform: uppercase;
+  }
+
+  #container {
+    width: 90%;
+    max-width: 500px;
+    margin-top: 2rem;
+
+    input {
+      width: 100%;
+      background-color: #3a3a3c;
+      color: white;
+      margin-bottom: 0.5rem;
+      padding: 0.5rem;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    #results {
+      text-align: right;
+    }
+  }
+}
